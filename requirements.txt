@@ -2,5 +2,8 @@ python-dotenv
 pandas
 numpy
 matplotlib
+pymongo[srv]==3.6
+pymongo
+certifi
 
 # -e .

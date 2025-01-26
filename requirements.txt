@@ -3,7 +3,8 @@ pandas
 numpy
 matplotlib
 pymongo[srv]==3.6
-pymongo
+pymongo==4.10.1
 certifi
+scikit-learn
 
 # -e .

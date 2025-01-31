@@ -8,5 +8,10 @@ certifi
 scikit-learn
 scipy
 dill
+mlflow
 pyaml
+dagshub
+fastapi
+uvicorn
+jinja2
 # -e .

@@ -3,49 +3,49 @@
 This project is designed to provide network security services using Docker containers deployed on AWS EC2 instances. The project utilizes AWS ECR for container image storage and AWS S3 for data storage.
 
 ## Project Structure
-
-.
-├── .github/
-│   └── workflows/
-│       └── main.yml
-├── app.py
-├── data_schema/
-│   └── schema.yaml
-├── dataset/
-│   └── phishingData.csv
-├── Dockerfile
-├── final_model/
-│   ├── model.pkl
-│   └── preprocessing.pkl
-├── main.py
-├── notebooks/
-│   └── __init__.py
-├── prediction_output/
-│   ├── __init__.py
-│   └── output.csv
-├── push_data.py
-├── README.md
-├── requirements.txt
-├── setup.py
-├── src/
-│   ├── cloud/
-│   ├── components/
-│   ├── constant/
-│   ├── entity/
-│   ├── exception/
-│   ├── logging/
-│   ├── pipeline/
-│   └── utils/
-├── static/
-│   └── __init__.py
-├── templates/
-│   ├── __init__.py
-│   └── table.html
-├── test_mongodb.py
-├── valid_data/
-│   └── test.csv
-└── venv/
-
+    
+    .
+    ├── .github/
+    │   └── workflows/
+    │       └── main.yml
+    ├── app.py
+    ├── data_schema/
+    │   └── schema.yaml
+    ├── dataset/
+    │   └── phishingData.csv
+    ├── Dockerfile
+    ├── final_model/
+    │   ├── model.pkl
+    │   └── preprocessing.pkl
+    ├── main.py
+    ├── notebooks/
+    │   └── __init__.py
+    ├── prediction_output/
+    │   ├── __init__.py
+    │   └── output.csv
+    ├── push_data.py
+    ├── README.md
+    ├── requirements.txt
+    ├── setup.py
+    ├── src/
+    │   ├── cloud/
+    │   ├── components/
+    │   ├── constant/
+    │   ├── entity/
+    │   ├── exception/
+    │   ├── logging/
+    │   ├── pipeline/
+    │   └── utils/
+    ├── static/
+    │   └── __init__.py
+    ├── templates/
+    │   ├── __init__.py
+    │   └── table.html
+    ├── test_mongodb.py
+    ├── valid_data/
+    │   └── test.csv
+    └── venv/
+    
 
 
 ## Prerequisites

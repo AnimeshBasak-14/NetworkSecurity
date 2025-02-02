@@ -2,8 +2,10 @@
 
 This project is designed to provide network security services using Docker containers deployed on AWS EC2 instances. The project utilizes AWS ECR for container image storage and AWS S3 for data storage.
 
+![Alt text](path/to/image.png)
+
 ## Project Structure
-    
+
     .
     ├── .github/
     │   └── workflows/
@@ -19,7 +21,7 @@ This project is designed to provide network security services using Docker conta
     │   └── preprocessing.pkl
     ├── main.py
     ├── notebooks/
-    │   └── __init__.py
+    │   └──__init__.py
     ├── prediction_output/
     │   ├── __init__.py
     │   └── output.csv
@@ -45,8 +47,6 @@ This project is designed to provide network security services using Docker conta
     ├── valid_data/
     │   └── test.csv
     └── venv/
-    
-
 
 ## Prerequisites
 
@@ -59,55 +59,48 @@ This project is designed to provide network security services using Docker conta
 
 1. **Clone the repository:**
 
-    ```sh
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
-    ```
-
+   ```sh
+   git clone https://github.com/yourusername/your-repo.git
+   cd your-repo
+   ```
 2. **Install dependencies:**
 
-    ```sh
-    pip install -r requirements.txt
-    ```
-
+   ```sh
+   pip install -r requirements.txt
+   ```
 3. **Set up AWS credentials:**
 
-    Configure your AWS CLI with the necessary credentials:
+   Configure your AWS CLI with the necessary credentials:
 
-    ```sh
-    aws configure
-    ```
-
+   ```sh
+   aws configure
+   ```
 4. **Build and push Docker image to ECR:**
 
-    ```sh
-    docker build -t your-ecr-repo-name .
-    docker tag your-ecr-repo-name:latest your-ecr-uri/your-ecr-repo-name:latest
-    docker push your-ecr-uri/your-ecr-repo-name:latest
-    ```
+   ```sh
+   docker build -t your-ecr-repo-name .
+   docker tag your-ecr-repo-name:latest your-ecr-uri/your-ecr-repo-name:latest
+   docker push your-ecr-uri/your-ecr-repo-name:latest
+   ```
 
 ## Deployment
 
 1. **Deploy on EC2:**
 
-    Use the following command to run the Docker container on an EC2 instance:
+   Use the following command to run the Docker container on an EC2 instance:
 
-    ```sh
-    docker run -d -p 8080:8080 --ipc="host" --name=networksecurity -e 'AWS_ACCESS_KEY_ID=your-access-key-id' -e 'AWS_SECRET_ACCESS_KEY=your-secret-access-key' -e 'AWS_REGION=your-region' your-ecr-uri/your-ecr-repo-name:latest
-    ```
-
+   ```sh
+   docker run -d -p 8080:8080 --ipc="host" --name=networksecurity -e 'AWS_ACCESS_KEY_ID=your-access-key-id' -e 'AWS_SECRET_ACCESS_KEY=your-secret-access-key' -e 'AWS_REGION=your-region' your-ecr-uri/your-ecr-repo-name:latest
+   ```
 2. **Continuous Integration and Deployment:**
 
-    The project uses GitHub Actions for CI/CD. The workflow is defined in [main.yml](https://github.com/AnimeshBasak-14/NetworkSecurity/blob/main/.github/workflows/main.yml). It includes steps for linting, running unit tests, building and pushing Docker images to ECR, and deploying the container on EC2.
+   The project uses GitHub Actions for CI/CD. The workflow is defined in [main.yml](https://github.com/AnimeshBasak-14/NetworkSecurity/blob/main/.github/workflows/main.yml). It includes steps for linting, running unit tests, building and pushing Docker images to ECR, and deploying the container on EC2.
 
 ## Usage
 
 - **Access the application:**
 
-    Once the container is running, you can access the application at `http://<ec2-instance-public-ip>:8080`.
-
+  Once the container is running, you can access the application at `http://<ec2-instance-public-ip>:8080`.
 - **Data Storage:**
 
-    The project uses AWS S3 for storing data. Ensure that your S3 bucket is properly configured and accessible.
-
-
+  The project uses AWS S3 for storing data. Ensure that your S3 bucket is properly configured and accessible.

@@ -2,7 +2,7 @@
 
 This project is designed to provide network security services using Docker containers deployed on AWS EC2 instances. The project utilizes AWS ECR for container image storage and AWS S3 for data storage.
 
-![Alt text](path/to/image.png)
+![predict](img/predict.png)
 
 ## Project Structure
 

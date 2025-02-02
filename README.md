@@ -110,6 +110,4 @@ This project is designed to provide network security services using Docker conta
 
     The project uses AWS S3 for storing data. Ensure that your S3 bucket is properly configured and accessible.
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.

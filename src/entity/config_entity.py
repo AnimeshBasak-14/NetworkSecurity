@@ -76,7 +76,6 @@ class DataTransformationConfig:
             training_pipeline.PREPROCESSING_OBJECT_FILE_NAME,)
 
 
-
 class ModelTrainerConfig:
     """
     This class is used to store the configuration for the model training

@@ -98,7 +98,7 @@ This project is designed to provide network security services using Docker conta
 
 2. **Continuous Integration and Deployment:**
 
-    The project uses GitHub Actions for CI/CD. The workflow is defined in [main.yml](http://_vscodecontentref_/9). It includes steps for linting, running unit tests, building and pushing Docker images to ECR, and deploying the container on EC2.
+    The project uses GitHub Actions for CI/CD. The workflow is defined in [main.yml](https://github.com/AnimeshBasak-14/NetworkSecurity/blob/main/.github/workflows/main.yml). It includes steps for linting, running unit tests, building and pushing Docker images to ECR, and deploying the container on EC2.
 
 ## Usage
 
